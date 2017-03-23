@@ -1,0 +1,116 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/Users/mm28820/.nvm/versions/node/v6.10.0/bin/node',
+1 verbose cli   '/Users/mm28820/.nvm/versions/node/v6.10.0/bin/npm',
+1 verbose cli   'publish' ]
+2 info using npm@3.10.10
+3 info using node@v6.10.0
+4 verbose publish [ '.' ]
+5 silly cache add args [ '.', null ]
+6 verbose cache add spec .
+7 silly cache add parsed spec Result {
+7 silly cache add   raw: '.',
+7 silly cache add   scope: null,
+7 silly cache add   escapedName: null,
+7 silly cache add   name: null,
+7 silly cache add   rawSpec: '.',
+7 silly cache add   spec: '/Users/mm28820/projects/ms/ManiaScriptt.tmLanguage',
+7 silly cache add   type: 'directory' }
+8 verbose addLocalDirectory /Users/mm28820/.npm/maniascript-tmlanguage/1.0.0/package.tgz not in flight; packing
+9 verbose correctMkdir /Users/mm28820/.npm correctMkdir not in flight; initializing
+10 info lifecycle maniascript-tmlanguage@1.0.0~prepublish: maniascript-tmlanguage@1.0.0
+11 silly lifecycle maniascript-tmlanguage@1.0.0~prepublish: no script for prepublish, continuing
+12 verbose tar pack [ '/Users/mm28820/.npm/maniascript-tmlanguage/1.0.0/package.tgz',
+12 verbose tar pack   '/Users/mm28820/projects/ms/ManiaScriptt.tmLanguage' ]
+13 verbose tarball /Users/mm28820/.npm/maniascript-tmlanguage/1.0.0/package.tgz
+14 verbose folder /Users/mm28820/projects/ms/ManiaScriptt.tmLanguage
+15 verbose addLocalTarball adding from inside cache /Users/mm28820/.npm/maniascript-tmlanguage/1.0.0/package.tgz
+16 verbose correctMkdir /Users/mm28820/.npm correctMkdir not in flight; initializing
+17 silly cache afterAdd maniascript-tmlanguage@1.0.0
+18 verbose afterAdd /Users/mm28820/.npm/maniascript-tmlanguage/1.0.0/package/package.json not in flight; writing
+19 verbose correctMkdir /Users/mm28820/.npm correctMkdir not in flight; initializing
+20 verbose afterAdd /Users/mm28820/.npm/maniascript-tmlanguage/1.0.0/package/package.json written
+21 silly publish { name: 'maniascript-tmlanguage',
+21 silly publish   description: 'ManiaScript tmLanguage Grammar',
+21 silly publish   version: '1.0.0',
+21 silly publish   main: 'lib',
+21 silly publish   scripts:
+21 silly publish    { build: 'scripts/build.js',
+21 silly publish      prebuild: 'rimraf build ; mkdirp build/syntaxes' },
+21 silly publish   license: 'MIT',
+21 silly publish   categories: [ 'Languages' ],
+21 silly publish   files: [ 'lib', 'build/syntaxes/ManiaScript.tmLanguage' ],
+21 silly publish   devDependencies:
+21 silly publish    { chalk: '^1.1.3',
+21 silly publish      'concat-stream': '^1.6.0',
+21 silly publish      converter: '0.0.5',
+21 silly publish      mkdirp: '^0.5.1',
+21 silly publish      'node-yaml': '^3.0.3',
+21 silly publish      'pad-stream': '^2.0.0',
+21 silly publish      rimraf: '^2.6.1',
+21 silly publish      split: '^1.0.0',
+21 silly publish      through: '^2.3.8' },
+21 silly publish   readme: '# ManiaScript.tmLanguage\nNative TextMate Language Grammar File\n\n## Why?\nThis is the grammar resource for ManiaScript.  It\'s purpose is to be the single source of truth for \nthe grammar files, so that text/code editors may use the same .tmLanguage files.\n\n## How to use\n\nThe final .tmLanguage file is *not* in source control, instead it is built from the `src` path.\n\n## Usage\n```\ngit clone https://github.com/MattMcFarland/ManiaScript.tmLanguage\ncd ManiaScript.tmLanguage\nnpm install\nnpm run build\n```\n\nOnce you build the scripts, you can access it in the `build` path, then you may export that to your plugin.\nI recommend using this as a dependency, instead of manually copying it over. However, it depends on the IDE you are supporting.\n\n## Usage with a NodeJS editor\nEditors like Atom and VS Code for example use the NodeJS runtime, so you can simply do this as part of your `publish` script\n\n```javascript\nconst tmLanguage = require(\'maniascript-tmlanguage\')\n\nfs.writeFileSync(\'ManiaScript.tmLanguage\', tmLanguage);\n```\n',
+21 silly publish   readmeFilename: 'README.md',
+21 silly publish   gitHead: 'c8ac50e46fc084ad256c58c86a40a3cc98087a0f',
+21 silly publish   _id: 'maniascript-tmlanguage@1.0.0',
+21 silly publish   _shasum: '0a3867b474732e0d8ab3449350ab7aba014257ee',
+21 silly publish   _from: '.' }
+22 verbose getPublishConfig undefined
+23 silly mapToRegistry name maniascript-tmlanguage
+24 silly mapToRegistry using default registry
+25 silly mapToRegistry registry http://registry.npmjs.org/
+26 silly mapToRegistry data Result {
+26 silly mapToRegistry   raw: 'maniascript-tmlanguage',
+26 silly mapToRegistry   scope: null,
+26 silly mapToRegistry   escapedName: 'maniascript-tmlanguage',
+26 silly mapToRegistry   name: 'maniascript-tmlanguage',
+26 silly mapToRegistry   rawSpec: '',
+26 silly mapToRegistry   spec: 'latest',
+26 silly mapToRegistry   type: 'tag' }
+27 silly mapToRegistry uri http://registry.npmjs.org/maniascript-tmlanguage
+28 verbose publish registryBase http://registry.npmjs.org/
+29 silly publish uploading /Users/mm28820/.npm/maniascript-tmlanguage/1.0.0/package.tgz
+30 verbose request uri http://registry.npmjs.org/maniascript-tmlanguage
+31 verbose request sending authorization for write operation
+32 info attempt registry request try #1 at 1:27:48 PM
+33 verbose request using bearer token for auth
+34 verbose request id c5a3ec84508c2bd6
+35 http request PUT http://registry.npmjs.org/maniascript-tmlanguage
+36 http 403 http://registry.npmjs.org/maniascript-tmlanguage
+37 verbose headers { 'content-type': 'application/json',
+37 verbose headers   'cache-control': 'max-age=300',
+37 verbose headers   'content-length': '95',
+37 verbose headers   'accept-ranges': 'bytes',
+37 verbose headers   date: 'Thu, 23 Mar 2017 17:27:33 GMT',
+37 verbose headers   via: '1.1 varnish',
+37 verbose headers   connection: 'keep-alive',
+37 verbose headers   'x-served-by': 'cache-yyz8328-YYZ',
+37 verbose headers   'x-cache': 'MISS',
+37 verbose headers   'x-cache-hits': '0',
+37 verbose headers   'x-timer': 'S1490290052.176997,VS0,VE1783',
+37 verbose headers   vary: 'Accept-Encoding' }
+38 verbose request invalidating /Users/mm28820/.npm/registry.npmjs.org/maniascript-tmlanguage on PUT
+39 error publish Failed PUT 403
+40 verbose stack Error: "You cannot publish over the previously published version 1.0.0." : maniascript-tmlanguage
+40 verbose stack     at makeError (/Users/mm28820/.nvm/versions/node/v6.10.0/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:302:12)
+40 verbose stack     at CachingRegistryClient.<anonymous> (/Users/mm28820/.nvm/versions/node/v6.10.0/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:290:14)
+40 verbose stack     at Request._callback (/Users/mm28820/.nvm/versions/node/v6.10.0/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:210:14)
+40 verbose stack     at Request.self.callback (/Users/mm28820/.nvm/versions/node/v6.10.0/lib/node_modules/npm/node_modules/request/request.js:187:22)
+40 verbose stack     at emitTwo (events.js:106:13)
+40 verbose stack     at Request.emit (events.js:191:7)
+40 verbose stack     at Request.<anonymous> (/Users/mm28820/.nvm/versions/node/v6.10.0/lib/node_modules/npm/node_modules/request/request.js:1048:10)
+40 verbose stack     at emitOne (events.js:96:13)
+40 verbose stack     at Request.emit (events.js:188:7)
+40 verbose stack     at IncomingMessage.<anonymous> (/Users/mm28820/.nvm/versions/node/v6.10.0/lib/node_modules/npm/node_modules/request/request.js:969:12)
+41 verbose statusCode 403
+42 verbose pkgid maniascript-tmlanguage
+43 verbose cwd /Users/mm28820/projects/ms/ManiaScriptt.tmLanguage
+44 error Darwin 14.5.0
+45 error argv "/Users/mm28820/.nvm/versions/node/v6.10.0/bin/node" "/Users/mm28820/.nvm/versions/node/v6.10.0/bin/npm" "publish"
+46 error node v6.10.0
+47 error npm  v3.10.10
+48 error code E403
+49 error "You cannot publish over the previously published version 1.0.0." : maniascript-tmlanguage
+50 error If you need help, you may report this error at:
+50 error     <https://github.com/npm/npm/issues>
+51 verbose exit [ 1, true ]
