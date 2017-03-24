@@ -1,7 +1,7 @@
 {
   "name": "maniascript-tmlanguage",
   "description": "ManiaScript tmLanguage Grammar",
-  "version": "1.0.1",
+  "version": "2.0.0",
   "main": "lib",
   "scripts": {
     "build": "scripts/build.js",
