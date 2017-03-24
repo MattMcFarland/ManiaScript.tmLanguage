@@ -30,3 +30,5 @@ expression:
             include: '#literal-variable'
         -
             include: '#punctuation'
+        -
+            include: '#language-label'
