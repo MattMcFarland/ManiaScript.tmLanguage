@@ -26,5 +26,13 @@ Editors like Atom and VS Code for example use the NodeJS runtime, so you can sim
 ```javascript
 const tmLanguage = require('maniascript-tmlanguage')
 
-fs.writeFileSync('ManiaScript.tmLanguage', tmLanguage);
+// write to xml
+fs.writeFileSync('ManiaScript.tmLanguage', tmLanguage.plist);
+
+// write to yaml
+fs.writeFileSync('ManiaScript.YAML-tmLanguage', tmLanguage.yaml);
+
+// write to json
+fs.writeFileSync('ManiaScript.JSON-tmLanguage', tmLanguage.json);
+
 ```
