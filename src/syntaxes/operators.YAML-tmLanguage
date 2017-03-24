@@ -19,7 +19,7 @@ operators:
             match: '==|!='
             name: keyword.operator.comparison.ms
         -
-            match: '/|%|\*|\+|-'
+            match: '/|%{1}|(?<!\*)\*{1}(?!\*)|(?<!\+)\+{1}(?!\+)|(?<!-)-{1}(?!-)'
             name: keyword.operator.arithmetic.ms
         -
             match: '::'
