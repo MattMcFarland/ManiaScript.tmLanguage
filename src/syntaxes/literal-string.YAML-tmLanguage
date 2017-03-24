@@ -5,9 +5,10 @@ literal-string:
             begin: '(?<!")"{1}(?!"")'
             beginCaptures:
                 '1': {name: punctuation.definition.string.begin.ms}
-            end: '("{1})'
+            end: '("{1})|([\n])'
             endCaptures:
                 '1': {name: punctuation.definition.string.end.ms}
+                '2': {name: punctuation.definition.string.end.illegal.ms}
             name: string.quoted.ms
             patterns:
                 - {include: '#string-content'}
