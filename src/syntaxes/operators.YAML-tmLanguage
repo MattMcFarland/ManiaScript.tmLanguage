@@ -13,16 +13,13 @@ operators:
             match: '%=|&=|\*=|\+=|-=|/=|\^|\^=|\|=|<<=|>>=|>>>='
             name: keyword.operator.assignment.augmented.ms
         -
-            match: '~|<<|>>>|>>|&|\|'
-            name: keyword.operator.bitwise.ms
-        -
             match: '<=|>=|<|>'
             name: keyword.operator.relational.ms
         -
             match: '==|!='
             name: keyword.operator.comparison.ms
         -
-            match: '--|\+\+|/|%|\*|\+|-'
+            match: '/|%|\*|\+|-'
             name: keyword.operator.arithmetic.ms
         -
             match: '::'
