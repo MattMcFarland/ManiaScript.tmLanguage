@@ -3,7 +3,7 @@ language-label:
         -
             captures:
                 '1': {name: entity.name.label.entry.sm}
-            match: '\+++(\w+)\+++'
+            match: '\+{3}(\w+)\+{3}|\-{3}(\w+)\-{3}'
             name: meta.label.entry.sm
         -
             captures:
