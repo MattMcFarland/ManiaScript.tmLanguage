@@ -30,8 +30,7 @@ function loader (fileName, callback) {
       const importStream = createReadStream(srcPath)
       const padding = data.match(/^\s*/)[0]
       const padStream = PadStream(4, padding[0])
-      importStream.setMaxListeners(11)
-      padStream.setMaxListeners(11)
+
       padStream.on('error', callback)
       importStream.pipe(padStream).pipe(concatStream)
 
