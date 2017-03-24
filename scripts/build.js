@@ -11,8 +11,19 @@ const yamlLoader = require('./yaml-import-loader')
 yamlLoader('src/syntaxes/_index.yaml', (err, res) => {
   if (err) throw new Error(err)
 
-  const yamlString = res.buffer;
-  const pojo = YAML.parse(yamlString)
+  const encodeObject = (obj) => {
+    const str = JSON.stringify(obj)
+    const esc = str
+      .replace(/&/g, '&amp;')
+      .replace(/\</g, '&lt;')
+      .replace(/\>/g, '&gt;')
+      .replace(/'/g, '&apos;')    
+
+    return JSON.parse(esc)
+  }
+
+  const yamlString = res.buffer
+  const pojo = encodeObject(YAML.parse(yamlString))
   const jsonString = JSON.stringify(pojo, null, 4)
   const plistString = plist.build(pojo)
   const builds = [
