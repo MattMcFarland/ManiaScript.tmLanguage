@@ -1,10 +1,10 @@
 keyword-storage:
     patterns:
         -
-            match: '#\b(Include|RequireContext|Setting|Const|Extends)\b'
+            match: '#\b(Command|Include|RequireContext|Setting|Const|Extends)\b'
             name: keyword.language.ms
         -
-            match: '(?<!\.)\b(define|declare)\b'
+            match: '(?<!\.)\b(persistent|netread|netwrite|define|declare)\b'
             name: storage.type.ms
         -
             match: '\bUI[a-zA-Z]*?\b'

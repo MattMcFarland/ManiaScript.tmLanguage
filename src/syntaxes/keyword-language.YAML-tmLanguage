@@ -6,5 +6,5 @@ keyword-language:
             name: keyword.language.control.flow.ms
         -
             comment: 'Unique keywords, things very specific to mania'
-            match: '\b#(Include|RequireContext|Setting|Const|Extends)\b'
+            match: '\b#(This,Include|RequireContext|Setting|Const|Extends)\b'
             name: keyword.language.control.ms
