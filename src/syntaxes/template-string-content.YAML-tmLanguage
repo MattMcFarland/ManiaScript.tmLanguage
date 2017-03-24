@@ -20,6 +20,3 @@ template-string-content:
                 '1': {name: punctuation.tag.script.close.ms}
             patterns:
                 - {include: '$self'}
-
-
-                # (<script><!--)([\s\S]*)(--><\/script>)

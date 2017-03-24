@@ -2,7 +2,7 @@ literal-variable:
     patterns:
         -
             match: '(?<!(?<!\.\.)\.)\b(arguments)\b'
-            name: variable.language.arguments.js
+            name: variable.language.arguments.ms
         -
             match: '[A-Z][_$\dA-Z]*\b'
             name: variable.other.constant.ms

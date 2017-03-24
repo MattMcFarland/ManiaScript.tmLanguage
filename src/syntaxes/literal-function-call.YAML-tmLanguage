@@ -2,12 +2,12 @@ literal-function-call:
     patterns:
         -
             captures:
-                '1': {name: entity.name.function.sm}
-                '2': {name: meta.group.braces.round.function.arguments.sm}
+                '1': {name: entity.name.function.ms}
+                '2': {name: meta.group.braces.round.function.arguments.ms}
             match: '(?x)  ([_$a-zA-Z][$\w]*)\s*  (\(\s*\))'
-            name: meta.function-call.without-arguments.sm
+            name: meta.function-call.without-arguments.ms
         -
             captures:
-                '1': {name: entity.name.function.sm}
+                '1': {name: entity.name.function.ms}
             match: '(?x)  ([_$a-zA-Z][$\w]*)\s* (?=\()'
-            name: meta.function-call.with-arguments.sm
+            name: meta.function-call.with-arguments.ms
