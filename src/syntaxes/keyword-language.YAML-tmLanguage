@@ -2,9 +2,9 @@ keyword-language:
     patterns:
         -
             comment: 'Common control keywords found in various imperitive C style languages'
-            match: \b(assert|foreach|break|case|continue|log|do|else|finally|for|yield|if|include|return|switch|while)\b
+            match: \b(assert|foreach|break|case|continue|log|do|else|finally|for|yield|if|return|switch|switchtype|while)\b
             name: keyword.language.control.flow.ms
         -
             comment: 'Unique keywords, things very specific to mania'
-            match: '\b#(Command|Include|RequireContext|Setting|Const|Extends)\b'
+            match: '#\b(Command|Include|RequireContext|Setting|Const|Extends|Struct)\b'
             name: keyword.language.control.ms

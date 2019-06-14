@@ -1,7 +1,7 @@
 keyword-storage:
     patterns:
         -
-            match: '#\b(Command|Include|RequireContext|Setting|Const|Extends)\b'
+            match: '#\b(Command|Include|RequireContext|Setting|Const|Extends|Struct)\b'
             name: keyword.language.ms
         -
             match: '(?<!\.)\b(persistent|netread|netwrite|define|declare)\b'
