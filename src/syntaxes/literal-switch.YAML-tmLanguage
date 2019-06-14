@@ -1,7 +1,7 @@
 literal-switch:
     patterns:
         -
-            begin: '(?<!\.)\b(switch)\b'
+            begin: '(?<!\.)\b(switch|switchtype)\b'
             beginCaptures:
                 '1': {name: keyword.control.switch.ms}
             end: '\}'
