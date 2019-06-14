@@ -4,9 +4,6 @@ storage-types:
             match: '(?<!\.)\bText\b'
             name: storage.type.text.ms
         -
-            match: '(?<!\.)\bList\b'
-            name: storage.type.list.ms
-        -
             match: '(?<!\.)\bReal\b'
             name: storage.type.number.ms
         -
@@ -22,7 +19,7 @@ storage-types:
             match: '(?<!\.)\bVec2\b'
             name: storage.type.vector-tuple.ms
         -
-            match: '(?<!\.)\bVec2\b'
+            match: '(?<!\.)\bVec3\b'
             name: storage.type.vector-triple.ms
         -
             match: '(?<!\.)\bInt3\b'
