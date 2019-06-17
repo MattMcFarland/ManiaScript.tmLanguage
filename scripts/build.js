@@ -24,15 +24,15 @@ yamlLoader('src/syntaxes/_index.yaml', (err, res) => {
 
   const yamlString = res.buffer
   const pojo = encodeObject(YAML.parse(yamlString))
-  const jsonString = JSON.stringify(pojo, null, 4)
+  const jsonString = JSON.stringify(YAML.parse(yamlString), null, 4)
   const plistString = plist.build(pojo)
   const builds = [
     ['build/syntaxes/ManiaScript.YAML-tmLanguage', yamlString],
-    ['build/syntaxes/ManiaScript.JSON-tmLanguage', jsonString],
+    ['build/syntaxes/ManiaScript.json', jsonString],
     ['build/syntaxes/ManiaScript.tmLanguage', plistString]
   ]
 
   builds.forEach(([path, buffer]) => 
-    fs.writeFile(path, buffer, 'utf8', 
+    fs.writeFileSync(path, buffer, 'utf8', 
       console.log(chalk.yellow('write'), chalk.green(`${path}... done!`))))
 })

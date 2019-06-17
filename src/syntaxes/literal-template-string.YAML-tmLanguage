@@ -11,4 +11,5 @@ literal-template-string:
             name: string.template-string.ms
             patterns:
                 - {include: '#template-string-content'}
+                - {include: 'text.xml'}
                 - {begin: '{{{', beginCaptures: {'0': {name: punctuation.template-string.element.begin.ms}}, end: '}}}', endCaptures: {'0': {name: punctuation.template-string.element.end.ms}}, name: entity.template-string.element.ms, patterns: [{include: '#expression'}]}
